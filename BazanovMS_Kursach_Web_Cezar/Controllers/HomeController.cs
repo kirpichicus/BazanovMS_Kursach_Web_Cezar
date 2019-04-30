@@ -23,6 +23,7 @@ namespace BazanovMS_Kursach_Web_Cezar.Controllers
         [HttpPost]
         public ActionResult Upload(HttpPostedFileBase download)
         {
+          ViewBag.Shifte = 0;
             try
             {
                 //Очищает папку с файлами
