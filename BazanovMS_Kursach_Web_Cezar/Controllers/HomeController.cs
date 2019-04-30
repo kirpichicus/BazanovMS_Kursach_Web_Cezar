@@ -53,7 +53,7 @@ namespace BazanovMS_Kursach_Web_Cezar.Controllers
                
                 ViewBag.Text = AllFileText;
             }
-            catch (Exception) { }
+            catch (Exception) { return View("Index");}
 
             return View("Index");
         }
